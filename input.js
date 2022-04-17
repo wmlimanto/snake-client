@@ -36,7 +36,7 @@ const handleUserInput = function (key) {
     connection.write("Say: OOPS!");
   };
   if (key === 'p') {
-    connection.write("Say: :P");
+    connection.write("Say: sorry :P");
   };
   if (key === 'l') {
     connection.write("Say: WOW!");
