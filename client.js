@@ -23,22 +23,8 @@ const connect = function () {
     //send our name to server after connecting
     conn.write('Name: WML');
   });
-
-  // //testing: added event for snake to move up one square every 50ms on connection
-  // conn.on("connect", () => {
-  //   conn.write("Move: up");
-  //   setTimeout(() => {
-  //     conn.write("Move: up");
-  //   }, 50);
-  //   setTimeout(() => {
-  //     conn.write("Move: up");
-  //   }, 100);
-  //   setTimeout(() => {
-  //     conn.write("Move: up");
-  //   }, 150);
-  // });
-
+  
   return conn;
 };
 
-module.exports = connect;
+module.exports = { connect };
