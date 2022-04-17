@@ -1,12 +1,13 @@
 
 const net = require("net");
+const { IP, PORT } = require("./constants");
 
 // establishes a connection with the game server
 const connect = function () {
   //create an object conn that represents connection with server
   const conn = net.createConnection({
-    host: '192.168.1.47',
-    port: 50541
+    host: IP,
+    port: PORT
   });
 
   // interpret incoming data as text
@@ -23,7 +24,7 @@ const connect = function () {
     //send our name to server after connecting
     conn.write('Name: WML');
   });
-  
+
   return conn;
 };
 
