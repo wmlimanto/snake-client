@@ -14,11 +14,11 @@ const setupInput = function (conn) {
 
 const handleUserInput = function (key) {
 
-  //ctrl+c to exit the game
+  // ctrl+c to exit the game
   if (key === '\u0003') {
     process.exit();
   };
-  //WASD movement
+  // WASD movement
   if (key === 'w') {
     connection.write("Move: up");
   };
@@ -31,7 +31,7 @@ const handleUserInput = function (key) {
   if (key === 'd') {
     connection.write("Move: right");
   };
-  //say message
+  // special messages
   if (key === 'o') {
     connection.write("Say: OOPS!");
   };
@@ -41,6 +41,6 @@ const handleUserInput = function (key) {
   if (key === 'l') {
     connection.write("Say: WOW!");
   };
-}
+};
 
 module.exports = { setupInput };
