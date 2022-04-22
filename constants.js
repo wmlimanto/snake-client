@@ -1,6 +1,6 @@
 //config constants
 
-const IP = '192.168.1.47';
+const IP = '192.168.0.18';
 const PORT = 50541;
 
 module.exports = {
